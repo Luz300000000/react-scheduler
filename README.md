@@ -1,6 +1,6 @@
 # React Scheduler Component
 
-[//]: # ([![npm package]&#40;https://img.shields.io/npm/v/@luz300000000/react-scheduler/latest.svg&#41;]&#40;https://www.npmjs.com/package/@luz300000000/react-scheduler&#41;)
+([![npm package]&#40;https://img.shields.io/npm/v/@luz300000000/react-scheduler/latest.svg&#41;]&#40;https://www.npmjs.com/package/@luz300000000/react-scheduler&#41;)
 
 > :warning: **Notice**: This component uses `mui`/`emotion`/`date-fns`. if your project is not already using these libs, this component may not be suitable.
 

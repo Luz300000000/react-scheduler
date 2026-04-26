@@ -2,10 +2,8 @@
   "name": "@luz300000000/react-scheduler",
   "version": "4.0.1",
   "description": "React scheduler component based on Material-UI & date-fns",
-  "main": "dist/index.js",
-  "types": "dist/src/lib/index.d.ts",
   "files": [
-    "dist"
+    "*"
   ],
   "type": "module",
   "scripts": {
@@ -18,7 +16,6 @@
     "lint": "npm run types && eslint .",
     "lint:fix": "eslint . --fix",
     "types": "tsc --noEmit",
-    "prepare": "husky install",
     "pre:commit": "lint-staged",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -85,7 +82,6 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.5.0",
-    "husky": "^9.1.7",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
     "lint-staged": "^16.4.0",

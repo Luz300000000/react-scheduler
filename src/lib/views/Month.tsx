@@ -51,7 +51,6 @@ const Month = () => {
     } finally {
       triggerLoading(false);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [daysList.length, getRemoteEvents]);
 
   useEffect(() => {

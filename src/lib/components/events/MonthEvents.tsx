@@ -90,6 +90,7 @@ const MonthEvents = ({
               e.stopPropagation();
               onViewMore(today);
             }}
+            component={"text"}
           >
             {`${Math.abs(events.length - i)} ${translations.moreEvents}`}
           </Typography>

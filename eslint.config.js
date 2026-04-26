@@ -1,9 +1,8 @@
-import react from "eslint-plugin-react";
 import tseslint, { configs as tseslintConfigs } from "typescript-eslint";
 import globals from "globals";
 import js from "@eslint/js";
 import * as reactHooks from "eslint-plugin-react-hooks";
-import reactRefresh from "eslint-plugin-react-refresh";
+import * as reactRefresh from "eslint-plugin-react-refresh";
 import pluginImport from "eslint-plugin-import";
 import pluginJsxA11y from "eslint-plugin-jsx-a11y";
 import pluginPromise from "eslint-plugin-promise";
@@ -18,7 +17,6 @@ export default tseslint.config(
     plugins: {
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
-      react,
     },
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
@@ -37,7 +35,6 @@ export default tseslint.config(
     },
 
     rules: {
-      ...reactHooks.configs.recommended.rules,
       "linebreak-style": ["error", "unix"],
 
       quotes: [

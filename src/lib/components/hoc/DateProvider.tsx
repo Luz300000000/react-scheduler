@@ -1,9 +1,10 @@
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import useStore from "../../hooks/useStore";
-import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFnsV3";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { ReactNode } from "react";
 
 interface AuxProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 const DateProvider = ({ children }: AuxProps) => {

@@ -1,9 +1,17 @@
 {
   "name": "@luz300000000/react-scheduler",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "React scheduler component based on Material-UI & date-fns",
+  "main": "./dist/index.js",
+  "types": "./dist/src/lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/lib/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
   "files": [
-    "*"
+    "dist"
   ],
   "type": "module",
   "scripts": {
@@ -20,14 +28,6 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci"
-  },
-  "exports": {
-    "./types": {
-      "import": "./types.d.ts"
-    },
-    ".": {
-      "import": "./index.js"
-    }
   },
   "lint-staged": {
     "**/*.{ts,js,tsx,jsx}": [

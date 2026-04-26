@@ -1,6 +1,6 @@
 {
   "name": "@luz300000000/react-scheduler",
-  "version": "4.0.2",
+  "version": "4.0.1",
   "description": "React scheduler component based on Material-UI & date-fns",
   "main": "dist/index.js",
   "types": "dist/src/lib/index.d.ts",

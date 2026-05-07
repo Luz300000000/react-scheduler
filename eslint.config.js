@@ -3,15 +3,11 @@ import globals from "globals";
 import js from "@eslint/js";
 import * as reactHooks from "eslint-plugin-react-hooks";
 import * as reactRefresh from "eslint-plugin-react-refresh";
-import pluginImport from "eslint-plugin-import";
-import pluginJsxA11y from "eslint-plugin-jsx-a11y";
 import pluginPromise from "eslint-plugin-promise";
 
 export default tseslint.config(
   { ignores: ["jest.config.ts", "scripts", "dist", "vite.config.js"] },
-  pluginJsxA11y.flatConfigs.recommended,
   pluginPromise.configs["flat/recommended"],
-  pluginImport.flatConfigs.recommended,
   {
     extends: [js.configs.recommended, ...tseslintConfigs.recommended],
     plugins: {
